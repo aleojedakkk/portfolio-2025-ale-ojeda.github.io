@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+
+
+.INDICE-NEWGUA{
+    background-color: rgba(0, 255, 255, 0);
+
+    aspect-ratio: 16 / 9;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.TITULO-INDICE{
+    font-size: 3vw;
+
+    font-family: Montserrat;
+    color:white;
+    background-color: #84BB40;
+    border-radius: 1vw;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5vw 9vw 1.5vw 9vw;
+
+    margin: 5vw 0 0 0;
+}
+
+.NUMEROS{
+    display: grid;
+        grid-template-columns: repeat(4, 0.5fr); /* 4 columns */
+        grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+        grid-row-gap: 2.5vw; /* Gap between rows */
+        grid-column-gap: 5vw; /* Gap between columns */
+        width: fit-content; /* Adjust as needed */
+        margin-top: 6vw;
+}
+
+
+.planta1{
+    left: 800px;
+    top:-230px;
+
+    position: absolute;
+    z-index: 1;
+
+    transform: scale(0.6); /* Example: Scales down to 80% */
+}
+
+.planta2{
+    top:500px;
+    left:-110px;
+
+    position: absolute;
+    z-index: 1;
+
+    transform: rotate(10deg) scale(0.8); /* Example: Scales down to 80% */
+}
+
+.TODITO{
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+    background-size: 115vw;
+    background-position: left 1vw top -10vw;
+}
+
+.GRAN-NUMERO-azul{
+    font-weight: 900; 
+    color:#63c3ed; 
+    font-size: 6.5vw; 
+}
+
+.GRAN-NUMERO-verde{
+    font-weight: 900; 
+    color:#84BB40; 
+    font-size: 6.5vw; 
+}
+
+.GRAN-NUMERO-naranja{
+    font-weight: 900; 
+    color:#EF8725; 
+    font-size: 6.5vw; 
+}
+
+.mini-titulo-azul{
+    font-weight: 800; 
+    color:#63c3ed; 
+    font-size: 2vw;
+    text-align: left;
+}
+
+.mini-titulo-verde{
+    font-weight: 800; 
+    color:#84BB40; 
+    font-size: 2vw;
+    text-align: left;
+}
+
+.mini-titulo-naranja{
+    font-weight: 800; 
+    color:#EF8725; 
+    font-size: 2vw;
+    text-align: left;
+}

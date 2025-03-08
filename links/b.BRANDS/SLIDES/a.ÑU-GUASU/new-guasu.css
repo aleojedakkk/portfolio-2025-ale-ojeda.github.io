@@ -1,0 +1,29 @@
+.new-gua { width: 20vw; }
+    #lity-fullscreen-btn {
+        position: absolute;
+        bottom: 10px; /* Changed to bottom */
+        right: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 5px; /* Reduced padding */
+        cursor: pointer;
+        z-index: 1001;
+        border-radius: 5px;
+    }
+    #lity-fullscreen-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Styles for the fullscreen icon */
+    #lity-fullscreen-btn::before {
+        content: '\26F6'; /* Unicode for fullscreen icon */
+        font-size: 3em; /* Adjust icon size */
+        display: block; /* Makes the icon center properly */
+        line-height: 1;
+    }
+
+    /* Hide the text */
+    #lity-fullscreen-btn span {
+        display: none;
+    }

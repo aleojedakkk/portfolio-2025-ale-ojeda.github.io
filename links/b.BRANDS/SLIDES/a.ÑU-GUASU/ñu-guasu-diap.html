@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Swipe.js Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="indice-ñugua.css">
+    <style>
+        html, body {
+            background: transparent;
+            position: relative;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: transparent;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .indice {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: #84bb4027;
+            font-family: montserrat;
+            font-weight: 800;
+
+            color: white;
+            border-radius: 0.5vw;
+            font-size: 1.3vw;
+            padding: 10px;
+            
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .indice:hover{
+            background-color: #84bb40;
+        }
+
+        .swiper-button-prev, .swiper-button-next { /* Style for navigation buttons */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10; /* Ensure they're above the swiper */
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px; /* Slightly rounded corners */
+        }
+
+        .swiper-button-prev {
+            left: 20px;
+        }
+
+        .swiper-button-next {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<button class="indice">ÍNDICE</button>
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="1-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="85-ñu-gua.png"></div>
+        <div class="swiper-slide">
+            <div class="TODITO">
+            
+                <section class="INDICE-NEWGUA">
+            
+                    <h2 class="TITULO-INDICE">
+                        ÍNDICE
+                    </h1>
+            
+                    <div class="NUMEROS">
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="1-IMAGOTIPO" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-naranja">1</div>
+                                <div class="mini-titulo-naranja">IMAGOTIPO</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="2-COLORES"style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-azul">2</div>
+                                <div class="mini-titulo-azul">COLORES</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="3-MASCOTA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-verde">3</div>
+                                <div class="mini-titulo-verde">MASCOTA</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="4-SEÑALETICA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-naranja">4</div>
+                                <div class="mini-titulo-naranja">SEÑALÉTICA</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="5-EL-MAPA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-azul">5</div>
+                                <div class="mini-titulo-azul">EL MAPA</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="6-VIA-PUBLICA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-verde">6</div>
+                                <div class="mini-titulo-verde">VÍA PÚBLICA</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="7-MERCH" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-naranja">7</div>
+                                <div class="mini-titulo-naranja">MERCH</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="8-ARQUIGRAFIA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-azul">8</div>
+                                <div class="mini-titulo-azul">ARQUIGRAFÍA</div>
+                            </div>
+                        </div>
+            
+            
+                         <div class="numero">
+                            <div class="reemplaza-svg" id="9-REDES" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-verde">9</div>
+                                <div class="mini-titulo-verde">REDES</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="10-WEB" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-naranja">10</div>
+                                <div class="mini-titulo-naranja">WEB</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="11-PAPELERIA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-azul">11</div>
+                                <div class="mini-titulo-azul">PAPELERÍA EMPRESARIAL</div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="numero">
+                            <div class="reemplaza-svg" id="12-INDUMENTARIA" style="cursor:pointer;font-family: Montserrat; display:flex; justify-content: center;align-items: center; gap:5%;">
+                                <div class="GRAN-NUMERO-verde">12</div>
+                                <div class="mini-titulo-verde">INDUMENTARIA</div>
+                            </div>
+                        </div>      
+            
+                    </div>
+            
+                </section>
+            </div>
+        </div>
+        <div class="swiper-slide"><img src="2-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="3-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="4-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="5-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="6-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="7-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="8-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="9-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="10-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="11-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="12-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="13-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="14-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="15-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="16-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="17-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="18-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="19-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="20-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="21-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="22-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="23-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="24-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="25-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="26-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="27-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="28-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="29-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="30-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="31-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="32-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="33-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="34-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="35-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="36-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="37-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="38-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="39-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="40-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="41-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="42-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="43-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="44-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="45-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="46-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="47-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="48-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="49-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="50-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="51-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="52-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="53-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="54-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="55-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="56-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="57-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="58-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="59-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="60-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="61-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="62-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="63-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="64-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="65-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="66-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="67-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="68-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="69-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="70-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="71-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="72-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="73-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="74-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="75-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="76-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="77-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="78-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="79-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="80-ñu-gua.png"></div>
+        <div class="swiper-slide"><img src="84-ñu-gua.png"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        loop:false,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {  // Enable navigation
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        lazy: {
+        loadPrevNext: true,
+        },
+    });
+
+    const goToSecondPageButton = document.querySelector('.indice');
+    const IMAGOTIPO = document.getElementById('1-IMAGOTIPO');
+    const COLORES = document.getElementById('2-COLORES');
+    const MASCOTA = document.getElementById('3-MASCOTA');
+    const SEÑALETICA = document.getElementById('4-SEÑALETICA');
+    const MAPA = document.getElementById('5-EL-MAPA');
+    const VIA = document.getElementById('6-VIA-PUBLICA');
+    const MERCH = document.getElementById('7-MERCH');
+    const ARQUIGRAFIA = document.getElementById('8-ARQUIGRAFIA');
+    const REDES = document.getElementById('9-REDES');
+    const WEB = document.getElementById('10-WEB');
+    const PAPELERIA = document.getElementById('11-PAPELERIA');
+    const INDUMENTARIA = document.getElementById('12-INDUMENTARIA');
+
+    goToSecondPageButton.addEventListener('click', () => {
+        mySwiper.slideTo(2);
+    });
+
+    IMAGOTIPO.addEventListener('click', () => {
+    mySwiper.slideTo(6);
+    });
+
+    COLORES.addEventListener('click', () => {
+    mySwiper.slideTo(15);
+    });
+
+    MASCOTA.addEventListener('click', () => {
+    mySwiper.slideTo(18);
+    });
+
+    SEÑALETICA.addEventListener('click', () => {
+    mySwiper.slideTo(22);
+    });
+
+    MAPA.addEventListener('click', () => {
+    mySwiper.slideTo(25);
+    });
+
+    VIA.addEventListener('click', () => {
+    mySwiper.slideTo(29);
+    });
+
+    MERCH.addEventListener('click', () => {
+    mySwiper.slideTo(42);
+    });
+
+    ARQUIGRAFIA.addEventListener('click', () => {
+    mySwiper.slideTo(50);
+    });
+
+    REDES.addEventListener('click', () => {
+    mySwiper.slideTo(65);
+    });
+
+    WEB.addEventListener('click', () => {
+    mySwiper.slideTo(67);
+    });
+
+    PAPELERIA.addEventListener('click', () => {
+    mySwiper.slideTo(70);
+    });
+
+    INDUMENTARIA.addEventListener('click', () => {
+    mySwiper.slideTo(76);
+    });
+
+</script>
+
+</body>
+</html>
