@@ -87,22 +87,22 @@ html, body{
 
 #brillo{
     position: relative;
-    bottom:-1950px;
+    bottom:-1120px;
 }
 
 #brillo-piezas{
     position: fixed;
-    bottom:-1950px;
+    bottom:-1120px;
 }
 
 #brillo-branding{
     position: fixed;
-    bottom:-1950px;
+    bottom:-1120px;
 }
 
 #brillo-links{
     position: fixed;
-    bottom:-1950px;
+    bottom:-1120px;
 }
 
 .brillo-hidden{ opacity: 0; }
@@ -900,7 +900,7 @@ html, body{
 .single-link h2{
     font-family: montserrat;
     color:rgba(255, 255, 255, 0.714);
-    font-size: 30px;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     
     filter: blur(0.7px);
 }
@@ -976,6 +976,30 @@ html, body{
 
     .single-piece{
         z-index: 5;
+    }
+
+    .brand-title{
+        font-size: 15px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+
+        transform: translateY(-40px);
+    }
+
+    .circulito{
+        width: 60px;
+    }
+    
+    .circulito svg{
+        width: 30px;
+    }
+
+    .single-link h2{
+        font-size: 0.7rem;
+        position: relative;
     }
 }
 
