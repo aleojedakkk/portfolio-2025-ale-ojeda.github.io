@@ -88,21 +88,32 @@ html, body{
 #brillo{
     position: relative;
     bottom:-1120px;
+    width: 1800px;
+    height: 1800px;
 }
 
 #brillo-piezas{
     position: fixed;
     bottom:-1120px;
+
+    width: 1800px;
+    height: 1800px;
 }
 
 #brillo-branding{
     position: fixed;
     bottom:-1120px;
+
+    width: 1800px;
+    height: 1800px;
 }
 
 #brillo-links{
     position: fixed;
     bottom:-1120px;
+
+    width: 1800px;
+    height: 1800px;
 }
 
 .brillo-hidden{ opacity: 0; }
